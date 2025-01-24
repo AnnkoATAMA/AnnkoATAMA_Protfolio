@@ -1,0 +1,38 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: float 10s ease-in-out infinite;
+}
+
+.circle:nth-child(odd) {
+    background-color: rgba(173, 216, 230, 0.7);
+}
+
+.circle:nth-child(even) {
+    background-color: rgba(152, 251, 152, 0.7);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

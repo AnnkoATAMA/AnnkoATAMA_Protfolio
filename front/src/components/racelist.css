@@ -1,0 +1,100 @@
+.raceul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    height: 30cm;
+}
+
+.racelist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 138px;
+    height: 530px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+
+.racelist:hover {
+    transform: translateY(-5px);
+}
+
+.racelist:active {
+    transform: translateY(0);
+}
+
+.button-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 96%;
+    background-color: #FFFFFF;
+    border: 1px solid gray;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #635e5e;
+    text-align: center;
+}
+
+.button-top-white {
+    width: 100%;
+    height: 4%;
+    background-color: #eae5e5;
+    border: 1px solid gray;
+}
+
+.button-top-black {
+    width: 100%;
+    height: 4%;
+    background-color: #000000;
+    border: 1px solid gray;
+}
+
+.button-top-red {
+    width: 100%;
+    height: 4%;
+    background-color: #ff0000;
+    border: 1px solid gray;
+}
+
+.button-top-blue {
+    width: 100%;
+    height: 4%;
+    background-color: #0000ff;
+    border: 1px solid gray;
+}
+
+.button-top-yellow {
+    width: 100%;
+    height: 4%;
+    background-color: #ffff00;
+    border: 1px solid gray;
+}
+
+.button-top-green {
+    width: 100%;
+    height: 4%;
+    background-color: #00ff00;
+    border: 1px solid gray;
+}
+
+.button-top-orange {
+    width: 100%;
+    height: 4%;
+    background-color: #FF8000;
+    border: 1px solid gray;
+}
+
+.button-top-pink {
+    width: 100%;
+    height: 4%;
+    background-color: #ff8080;
+    border: 1px solid gray;
+}

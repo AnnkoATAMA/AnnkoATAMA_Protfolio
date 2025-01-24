@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 255, 0, 0.38);
+    width: 100vw;
+    padding: 16px;
+}
+ul {
+    display: flex;
+}
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+.gate_button {
+    width: 58px;
+    height: 58px;
+    background-color: rgb(255, 255, 0);
+    font-size: 48px;
+    transition: border-color 0.25s;
+}
+
+.gate_button:hover {
+    background-color: rgba(255, 255, 0, 0.7);
+
+}
