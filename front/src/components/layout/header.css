@@ -3,8 +3,8 @@ header {
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 255, 0, 0.38);
-    width: 100vw;
     padding: 16px;
+
 }
 ul {
     display: flex;
