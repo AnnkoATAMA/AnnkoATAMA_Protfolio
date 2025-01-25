@@ -58,10 +58,10 @@ const RaceList = () => {
                         <div className="button-label-num">
                             <div className="button-label-num-yellow">5</div>
                         </div>
-                        <span>G</span>
-                        <span>I</span>
-                        <span>T</span>
-                        <span>T</span>
+                        <span>Z</span>
+                        <span>E</span>
+                        <span>N</span>
+                        <span>N</span>
                     </div>
                 </button>
                 <button className="racelist" onClick={() => navigate("/")}>
