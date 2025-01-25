@@ -34,9 +34,6 @@ const Header = () => {
                         <li>
                             <button className={"gate_button"}>1</button>
                         </li>
-                        <li>
-                            <button className={"gate_button"}>1</button>
-                        </li>
                     </ul>
                 </nav>
             </header>
