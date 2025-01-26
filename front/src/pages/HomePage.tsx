@@ -1,6 +1,6 @@
 import RaceList from "../components/RaceList.tsx";
 
-const Home = () => {
+const HomePage = () => {
     return (
         <div>
             <RaceList />
@@ -8,4 +8,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default HomePage;

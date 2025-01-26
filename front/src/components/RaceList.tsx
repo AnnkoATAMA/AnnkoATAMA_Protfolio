@@ -1,14 +1,32 @@
 import "./racelist.css"
 import {useNavigate} from "react-router-dom";
+import {useEffect} from "react";
 
 const RaceList = () => {
 
     const navigate = useNavigate();
+    useEffect(() => {
+        const buttons = document.querySelectorAll(".racelist");
+        buttons.forEach((button) => {
+            button.addEventListener("animationend", () => {
+                button.classList.remove("racelist");
+                button.classList.add("racelist-hover");
+            });
+        });
+        return () => {
+            buttons.forEach((button) => {
+                button.removeEventListener("animationend", () => {
+                    button.classList.remove("racelist");
+                    button.classList.add("racelist-hover");
+                });
+            });
+        };
+    }, []);
 
     return (
         <div>
             <div className="raceul">
-                <button className="racelist" onClick={() => navigate("/")}>
+                <button className="racelist" onClick={() => navigate("/contact")}>
                     <div className="button-top-pink"></div>
                     <div className="button-label">
                         <div className="button-label-num">
@@ -23,7 +41,7 @@ const RaceList = () => {
                         <span>T</span>
                     </div>
                 </button>
-                <button className="racelist" onClick={() => navigate("/")}>
+                <button className="racelist" onClick={() => window.location.href ="https://x.com/Takumi93Ma"}>
                     <div className="button-top-orange"></div>
                     <div className="button-label">
                         <div className="button-label-num">
@@ -38,7 +56,7 @@ const RaceList = () => {
                         <span>R</span>
                     </div>
                 </button>
-                <button className="racelist" onClick={() => navigate("/")}>
+                <button className="racelist" onClick={() => window.location.href ="https://github.com/AnnkoATAMA"}>
                     <div className="button-top-green"></div>
                     <div className="button-label">
                         <div className="button-label-num">
@@ -52,7 +70,7 @@ const RaceList = () => {
                         <span>B</span>
                     </div>
                 </button>
-                <button className="racelist" onClick={() => navigate("/")}>
+                <button className="racelist" onClick={() => window.location.href ="https://zenn.dev/takuanko"}>
                     <div className="button-top-yellow"></div>
                     <div className="button-label">
                         <div className="button-label-num">
@@ -64,7 +82,7 @@ const RaceList = () => {
                         <span>N</span>
                     </div>
                 </button>
-                <button className="racelist" onClick={() => navigate("/")}>
+                <button className="racelist" onClick={() => navigate("/repository")}>
                     <div className="button-top-blue"></div>
                     <div className="button-label">
                         <div className="button-label-num">
@@ -82,7 +100,7 @@ const RaceList = () => {
                         <span>Y</span>
                     </div>
                 </button>
-                <button className="racelist" onClick={() => navigate("/")}>
+                <button className="racelist" onClick={() => navigate("/skills")}>
                     <div className="button-top-red"></div>
                     <div className="button-label">
                         <div className="button-label-num">
@@ -96,7 +114,7 @@ const RaceList = () => {
                         <span>S</span>
                     </div>
                 </button>
-                <button className="racelist" onClick={() => navigate("/")}>
+                <button className="racelist" onClick={() => navigate("/profile")}>
                     <div className="button-top-black"></div>
                     <div className="button-label">
                         <div className="button-label-num">
