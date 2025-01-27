@@ -1,7 +1,18 @@
+.list-cont {
+    margin-right: 60px;
+    max-width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .title-frame {
     padding: 12px;
     margin-left: 60px;
     margin-bottom: 16px;
+    width: 100%;
     border: rgba(211, 211, 211, 0.47) 1px solid;
     border-radius: 15px;
     background-color: #fefefe;
@@ -15,7 +26,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin: auto;
+    width: 100%;
 }
 
 .racelist {
@@ -112,76 +123,51 @@
     background-color: #ddffdd;
 }
 
-.button-top-white {
+.button-top {
     width: 100%;
     height: 4%;
-    background-color: #f1f1f1;
-    border: 1px solid #eae5e5;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.button-top-white {
+    background-color: #f1f1f1;
+    border: 1px solid #eae5e5;
 }
 
 .button-top-black {
-    width: 100%;
-    height: 4%;
     background-color: #373636;
     border: 1px solid #eae5e5;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .button-top-red {
-    width: 100%;
-    height: 4%;
     background-color: #ea3636;
     border: 1px solid #eae5e5;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .button-top-blue {
-    width: 100%;
-    height: 4%;
     background-color: #6969f3;
     border: 1px solid #eae5e5;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .button-top-yellow {
-    width: 100%;
-    height: 4%;
     background-color: #f1f16e;
     border: 1px solid #eae5e5;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .button-top-green {
-    width: 100%;
-    height: 4%;
     background-color: #77f177;
     border: 1px solid #eae5e5;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .button-top-orange {
-    width: 100%;
-    height: 4%;
     background-color: #eda75c;
     border: 1px solid #eae5e5;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .button-top-pink {
-    width: 100%;
-    height: 4%;
     background-color: #f3a5a5;
     border: 1px solid #eae5e5;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 @keyframes slide-in {
@@ -195,11 +181,14 @@
     }
 }
 
-.button-label-num-white {
-    background-color: #f1f1f1;
+.button-label-num-div {
     width: 48px;
     height: 48px;
     border-radius: 10px;
+}
+
+.button-label-num-white {
+    background-color: #f1f1f1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,9 +197,6 @@
 
 .button-label-num-black {
     background-color: #373636;
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,9 +206,6 @@
 
 .button-label-num-red {
     background-color: #ea3636;
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,9 +215,6 @@
 
 .button-label-num-blue {
     background-color: #6969f3;
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,9 +224,6 @@
 
 .button-label-num-yellow {
     background-color: #f1f16e;
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,9 +232,6 @@
 
 .button-label-num-green {
     background-color: #77f177;
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,9 +241,6 @@
 
 .button-label-num-orange {
     background-color: #eda75c;
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -279,9 +250,6 @@
 
 .button-label-num-pink {
     background-color: #f3a5a5;
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -310,5 +278,136 @@
     100% {
         opacity: 1;
         transform: rotateY(360deg);
+    }
+}
+
+@media (max-width: 1200px) {
+    .list-cont {
+        max-width: 80%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .title-frame {
+        margin-left: 0;
+        padding: 12px;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 16px;
+        border: rgba(211, 211, 211, 0.47) 1px solid;
+        border-radius: 15px;
+        background-color: #fefefe;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .raceul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .racelist {
+        width: 280px;
+        height: 60px;
+        transition: transform 0.2s, background-color 0.2s;
+        flex-wrap: wrap;
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: slide-in 0.5s forwards;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .racelist-hover {
+        width: 280px;
+        height: 60px;
+        transition: transform 0.2s, background-color 0.2s;
+        flex-wrap: wrap;
+        opacity: 1;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .button-top {
+        width: 4%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .button-label-num {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2%;
+        height: 100%;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        font-size: 24px;
+        margin:0 16px 0 16px;
+    }
+
+    .button-label {
+        display: flex;
+        align-items: center;
+        width: 94%;
+        height: 100%;
+        background-color: #FFFFFF;
+        border: 1px solid #eae5e5;
+        font-size: 16px;
+        color: #635e5e;
+        text-align: center;
+        border-radius: 0 10px 10px 0;
+        border-left-color: transparent;
+        flex-direction: row;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        box-shadow: rgba(0, 0, 0, 0.14) 1px 10px 20px;
+    }
+
+    .button-label-num-div {
+        width: 48px;
+        height: 48px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 4px;
+    }
+
+    .racelist:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    .racelist:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    .racelist:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+    .racelist:nth-child(4) {
+        animation-delay: 0.8s;
+    }
+
+    .racelist:nth-child(5) {
+        animation-delay: 1s;
+    }
+
+    .racelist:nth-child(6) {
+        animation-delay: 1.2s;
+    }
+
+    .racelist:nth-child(7) {
+        animation-delay: 1.4s;
+    }
+
+    .racelist:nth-child(8) {
+        animation-delay: 1.6s;
     }
 }

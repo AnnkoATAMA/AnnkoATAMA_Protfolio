@@ -25,16 +25,16 @@ const RaceList = () => {
     }, []);
 
     return (
-        <div>
+        <div className="list-cont">
             <div className="title-frame">
                 <h3>Welcome to my portfolio!</h3>
             </div>
             <div className="raceul">
                 <button className="racelist" onClick={() => navigate("/contact")}>
-                    <div className="button-top-pink"></div>
+                    <div className="button-top button-top-pink"></div>
                     <div className="button-label">
                         <div className="button-label-num">
-                            <div className="button-label-num-pink">8</div>
+                            <div className="button-label-num-div button-label-num-pink">8</div>
                         </div>
                         <span>C</span>
                         <span>O</span>
@@ -47,10 +47,10 @@ const RaceList = () => {
                     <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => window.location.href = "https://x.com/Takumi93Ma"}>
-                    <div className="button-top-orange"></div>
+                    <div className="button-top button-top-orange"></div>
                     <div className="button-label">
                         <div className="button-label-num">
-                            <div className="button-label-num-orange">7</div>
+                            <div className="button-label-num-div button-label-num-orange">7</div>
                         </div>
                         <span>T</span>
                         <span>W</span>
@@ -63,10 +63,10 @@ const RaceList = () => {
                     <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => window.location.href = "https://github.com/AnnkoATAMA"}>
-                    <div className="button-top-green"></div>
+                    <div className="button-top button-top-green"></div>
                     <div className="button-label">
                         <div className="button-label-num">
-                            <div className="button-label-num-green">6</div>
+                            <div className="button-label-num-div button-label-num-green">6</div>
                         </div>
                         <span>G</span>
                         <span>I</span>
@@ -78,10 +78,10 @@ const RaceList = () => {
                     <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => window.location.href = "https://zenn.dev/takuanko"}>
-                    <div className="button-top-yellow"></div>
+                    <div className="button-top button-top-yellow"></div>
                     <div className="button-label">
                         <div className="button-label-num">
-                            <div className="button-label-num-yellow">5</div>
+                            <div className="button-label-num-div button-label-num-yellow">5</div>
                         </div>
                         <span>Z</span>
                         <span>E</span>
@@ -91,10 +91,10 @@ const RaceList = () => {
                     <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => navigate("/repository")}>
-                <div className="button-top-blue"></div>
+                <div className="button-top button-top-blue"></div>
                     <div className="button-label">
                         <div className="button-label-num">
-                            <div className="button-label-num-blue">4</div>
+                            <div className="button-label-num-div button-label-num-blue">4</div>
                         </div>
                         <span>R</span>
                         <span>E</span>
@@ -110,10 +110,10 @@ const RaceList = () => {
                     <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => navigate("/skills")}>
-                <div className="button-top-red"></div>
+                <div className="button-top button-top-red"></div>
                     <div className="button-label">
                         <div className="button-label-num">
-                            <div className="button-label-num-red">3</div>
+                            <div className="button-label-num-div button-label-num-red">3</div>
                         </div>
                         <span>S</span>
                         <span>K</span>
@@ -125,10 +125,10 @@ const RaceList = () => {
                     <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => navigate("/profile")}>
-                <div className="button-top-black"></div>
+                <div className="button-top button-top-black"></div>
                     <div className="button-label">
                         <div className="button-label-num">
-                            <div className="button-label-num-black">2</div>
+                            <div className="button-label-num-div button-label-num-black">2</div>
                         </div>
                         <span>P</span>
                         <span>R</span>
@@ -141,10 +141,10 @@ const RaceList = () => {
                     <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => navigate("/")}>
-                <div className="button-top-white"></div>
+                <div className="button-top button-top-white"></div>
                     <div className="button-label">
                         <div className="button-label-num">
-                            <div className="button-label-num-white">1</div>
+                            <div className="button-label-num-div button-label-num-white">1</div>
                         </div>
                         <span>H</span>
                         <span>O</span>
