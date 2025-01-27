@@ -1,4 +1,4 @@
-import "./header.css"
+import "./css/header.css"
 import {useNavigate} from "react-router-dom";
 import { FaXTwitter, FaGithub, FaEnvelope, FaRegWindowMaximize, FaUser, FaHouse} from "react-icons/fa6";
 import {SiZenn} from "react-icons/si";

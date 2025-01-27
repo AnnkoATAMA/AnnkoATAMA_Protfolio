@@ -1,3 +1,15 @@
+.title-frame {
+    padding: 12px;
+    margin-left: 60px;
+    margin-bottom: 16px;
+    border: rgba(211, 211, 211, 0.47) 1px solid;
+    border-radius: 15px;
+    background-color: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .raceul {
     display: flex;
     align-items: center;
@@ -28,7 +40,6 @@
 
 .racelist-hover:hover {
     transform: translateY(-12px);
-
 }
 
 .racelist-hover:active {
@@ -84,7 +95,7 @@
     width: 100%;
     height: 96%;
     background-color: #FFFFFF;
-    border: 1px solid gray;
+    border: 1px solid #eae5e5;
     font-size: 32px;
     color: #635e5e;
     text-align: center;
@@ -97,11 +108,15 @@
     box-shadow: rgba(0, 0, 0, 0.14) 1px 10px 20px;
 }
 
+.button-label:hover {
+    background-color: #ddffdd;
+}
+
 .button-top-white {
     width: 100%;
     height: 4%;
     background-color: #f1f1f1;
-    border: 1px solid gray;
+    border: 1px solid #eae5e5;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -110,7 +125,7 @@
     width: 100%;
     height: 4%;
     background-color: #373636;
-    border: 1px solid gray;
+    border: 1px solid #eae5e5;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -119,7 +134,7 @@
     width: 100%;
     height: 4%;
     background-color: #ea3636;
-    border: 1px solid gray;
+    border: 1px solid #eae5e5;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -128,7 +143,7 @@
     width: 100%;
     height: 4%;
     background-color: #6969f3;
-    border: 1px solid gray;
+    border: 1px solid #eae5e5;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -137,7 +152,7 @@
     width: 100%;
     height: 4%;
     background-color: #f1f16e;
-    border: 1px solid gray;
+    border: 1px solid #eae5e5;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -146,7 +161,7 @@
     width: 100%;
     height: 4%;
     background-color: #77f177;
-    border: 1px solid gray;
+    border: 1px solid #eae5e5;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -155,7 +170,7 @@
     width: 100%;
     height: 4%;
     background-color: #eda75c;
-    border: 1px solid gray;
+    border: 1px solid #eae5e5;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -164,7 +179,7 @@
     width: 100%;
     height: 4%;
     background-color: #f3a5a5;
-    border: 1px solid gray;
+    border: 1px solid #eae5e5;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -272,4 +287,33 @@
     justify-content: center;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.14) 1px 1px 1px;
+}
+
+.racelist-hover:hover .button-list-hover-anim {
+    animation: spin 1s linear infinite;
+}
+
+.button-list-hover-anim {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    margin-top: 20px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #420d0d;
+    transition: transform 0.5s ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
 }

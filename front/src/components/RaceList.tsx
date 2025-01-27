@@ -25,6 +25,9 @@ const RaceList = () => {
 
     return (
         <div>
+            <div className="title-frame">
+                <h3>Welcome to my portfolio!</h3>
+            </div>
             <div className="raceul">
                 <button className="racelist" onClick={() => navigate("/contact")}>
                     <div className="button-top-pink"></div>
@@ -40,8 +43,10 @@ const RaceList = () => {
                         <span>C</span>
                         <span>T</span>
                     </div>
+                    <div className="button-list-hover-anim">
+                    </div>
                 </button>
-                <button className="racelist" onClick={() => window.location.href ="https://x.com/Takumi93Ma"}>
+                <button className="racelist" onClick={() => window.location.href = "https://x.com/Takumi93Ma"}>
                     <div className="button-top-orange"></div>
                     <div className="button-label">
                         <div className="button-label-num">
@@ -55,8 +60,10 @@ const RaceList = () => {
                         <span>E</span>
                         <span>R</span>
                     </div>
+                    <div className="button-list-hover-anim">
+                    </div>
                 </button>
-                <button className="racelist" onClick={() => window.location.href ="https://github.com/AnnkoATAMA"}>
+                <button className="racelist" onClick={() => window.location.href = "https://github.com/AnnkoATAMA"}>
                     <div className="button-top-green"></div>
                     <div className="button-label">
                         <div className="button-label-num">
@@ -69,8 +76,10 @@ const RaceList = () => {
                         <span>U</span>
                         <span>B</span>
                     </div>
+                    <div className="button-list-hover-anim">
+                    </div>
                 </button>
-                <button className="racelist" onClick={() => window.location.href ="https://zenn.dev/takuanko"}>
+                <button className="racelist" onClick={() => window.location.href = "https://zenn.dev/takuanko"}>
                     <div className="button-top-yellow"></div>
                     <div className="button-label">
                         <div className="button-label-num">
@@ -80,6 +89,8 @@ const RaceList = () => {
                         <span>E</span>
                         <span>N</span>
                         <span>N</span>
+                    </div>
+                    <div className="button-list-hover-anim">
                     </div>
                 </button>
                 <button className="racelist" onClick={() => navigate("/repository")}>
@@ -99,6 +110,8 @@ const RaceList = () => {
                         <span>R</span>
                         <span>Y</span>
                     </div>
+                    <div className="button-list-hover-anim">
+                    </div>
                 </button>
                 <button className="racelist" onClick={() => navigate("/skills")}>
                     <div className="button-top-red"></div>
@@ -112,6 +125,8 @@ const RaceList = () => {
                         <span>L</span>
                         <span>L</span>
                         <span>S</span>
+                    </div>
+                    <div className="button-list-hover-anim">
                     </div>
                 </button>
                 <button className="racelist" onClick={() => navigate("/profile")}>
@@ -128,6 +143,8 @@ const RaceList = () => {
                         <span>L</span>
                         <span>E</span>
                     </div>
+                    <div className="button-list-hover-anim">
+                    </div>
                 </button>
                 <button className="racelist" onClick={() => navigate("/")}>
                     <div className="button-top-white"></div>
@@ -139,6 +156,8 @@ const RaceList = () => {
                         <span>O</span>
                         <span>M</span>
                         <span>E</span>
+                    </div>
+                    <div className="button-list-hover-anim">
                     </div>
                 </button>
             </div>
