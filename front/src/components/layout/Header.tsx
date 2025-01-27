@@ -2,7 +2,7 @@ import "./css/header.css"
 import {useNavigate} from "react-router-dom";
 import { FaXTwitter, FaGithub, FaEnvelope, FaRegWindowMaximize, FaUser, FaHouse} from "react-icons/fa6";
 import {SiZenn} from "react-icons/si";
-import {RiGitRepositoryFill} from "react-icons/ri";
+import {RiGitRepositoryLine} from "react-icons/ri";
 
 const Header = () => {
 
@@ -26,7 +26,7 @@ const Header = () => {
                             <button className={"gate_button"} onClick={() => window.location.href ="https://zenn.dev/takuanko"}><SiZenn size={"36px"}/></button>
                         </li>
                         <li>
-                            <button className={"gate_button"} onClick={() => navigate("/repository")}><RiGitRepositoryFill size={"36px"}/></button>
+                            <button className={"gate_button"} onClick={() => navigate("/repository")}><RiGitRepositoryLine size={"36px"}/></button>
                         </li>
                         <li>
                             <button className={"gate_button"} onClick={() => navigate("/skills")}><FaRegWindowMaximize size={"36px"}/></button>

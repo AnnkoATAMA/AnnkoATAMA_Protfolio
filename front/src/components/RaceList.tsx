@@ -1,6 +1,7 @@
-import "./racelist.css"
+import "./racelist.css";
 import {useNavigate} from "react-router-dom";
 import {useEffect} from "react";
+import teitetsu from "../assets/teitetsu.svg";
 
 const RaceList = () => {
 
@@ -43,8 +44,7 @@ const RaceList = () => {
                         <span>C</span>
                         <span>T</span>
                     </div>
-                    <div className="button-list-hover-anim">
-                    </div>
+                    <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => window.location.href = "https://x.com/Takumi93Ma"}>
                     <div className="button-top-orange"></div>
@@ -60,8 +60,7 @@ const RaceList = () => {
                         <span>E</span>
                         <span>R</span>
                     </div>
-                    <div className="button-list-hover-anim">
-                    </div>
+                    <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => window.location.href = "https://github.com/AnnkoATAMA"}>
                     <div className="button-top-green"></div>
@@ -76,8 +75,7 @@ const RaceList = () => {
                         <span>U</span>
                         <span>B</span>
                     </div>
-                    <div className="button-list-hover-anim">
-                    </div>
+                    <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => window.location.href = "https://zenn.dev/takuanko"}>
                     <div className="button-top-yellow"></div>
@@ -90,11 +88,10 @@ const RaceList = () => {
                         <span>N</span>
                         <span>N</span>
                     </div>
-                    <div className="button-list-hover-anim">
-                    </div>
+                    <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => navigate("/repository")}>
-                    <div className="button-top-blue"></div>
+                <div className="button-top-blue"></div>
                     <div className="button-label">
                         <div className="button-label-num">
                             <div className="button-label-num-blue">4</div>
@@ -110,11 +107,10 @@ const RaceList = () => {
                         <span>R</span>
                         <span>Y</span>
                     </div>
-                    <div className="button-list-hover-anim">
-                    </div>
+                    <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => navigate("/skills")}>
-                    <div className="button-top-red"></div>
+                <div className="button-top-red"></div>
                     <div className="button-label">
                         <div className="button-label-num">
                             <div className="button-label-num-red">3</div>
@@ -126,11 +122,10 @@ const RaceList = () => {
                         <span>L</span>
                         <span>S</span>
                     </div>
-                    <div className="button-list-hover-anim">
-                    </div>
+                    <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => navigate("/profile")}>
-                    <div className="button-top-black"></div>
+                <div className="button-top-black"></div>
                     <div className="button-label">
                         <div className="button-label-num">
                             <div className="button-label-num-black">2</div>
@@ -143,11 +138,10 @@ const RaceList = () => {
                         <span>L</span>
                         <span>E</span>
                     </div>
-                    <div className="button-list-hover-anim">
-                    </div>
+                    <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"}/>
                 </button>
                 <button className="racelist" onClick={() => navigate("/")}>
-                    <div className="button-top-white"></div>
+                <div className="button-top-white"></div>
                     <div className="button-label">
                         <div className="button-label-num">
                             <div className="button-label-num-white">1</div>
@@ -157,8 +151,7 @@ const RaceList = () => {
                         <span>M</span>
                         <span>E</span>
                     </div>
-                    <div className="button-list-hover-anim">
-                    </div>
+                    <img src={teitetsu} className="button-list-hover-anim" alt={"蹄鉄"} />
                 </button>
             </div>
         </div>
