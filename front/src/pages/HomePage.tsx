@@ -1,8 +1,9 @@
 import RaceList from "../components/RaceList.tsx";
+import "../index.css"
 
 const HomePage = () => {
     return (
-        <div>
+        <div className="container">
             <RaceList />
         </div>
     )

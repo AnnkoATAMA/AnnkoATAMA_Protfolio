@@ -4,9 +4,10 @@
   border: 0;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 button {
@@ -23,3 +24,10 @@ h1 {
   line-height: 1.1;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}

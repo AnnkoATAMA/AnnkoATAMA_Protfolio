@@ -4,14 +4,12 @@
     justify-content: center;
     flex-direction: row;
     margin: auto;
-    height: 30cm;
 }
 
 .racelist {
     width: 138px;
     height: 530px;
     transition: transform 0.2s, background-color 0.2s;
-    font-family: Arial, sans-serif;
     flex-wrap: wrap;
     margin-left: 60px;
     opacity: 0;
@@ -23,7 +21,6 @@
     width: 138px;
     height: 530px;
     transition: transform 0.2s, background-color 0.2s;
-    font-family: Arial, sans-serif;
     flex-wrap: wrap;
     margin-left: 60px;
     opacity: 1;
@@ -88,7 +85,6 @@
     height: 96%;
     background-color: #FFFFFF;
     border: 1px solid gray;
-    font-family: Arial, sans-serif;
     font-size: 32px;
     color: #635e5e;
     text-align: center;
