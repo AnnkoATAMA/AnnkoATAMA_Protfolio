@@ -1,7 +1,8 @@
+import "./css/loading.css"
+
 const Loading = () => {
   return (
-      <div>
-          LOADING
+      <div className="loading-black">
       </div>
   )
 }
