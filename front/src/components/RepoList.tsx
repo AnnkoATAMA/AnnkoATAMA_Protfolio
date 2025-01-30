@@ -1,8 +1,7 @@
-import { Key, ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "react";
+import { Key } from "react";
 import {use} from "../utils/use";
 
 type Repo = {
-    repo: string;
     id: string;
     name: string;
     html_url: string;
@@ -43,7 +42,7 @@ const RepoList = () => {
 
     return (
         <ul>
-            {repos.map((repo: { id: Key | null | undefined; html_url: string | undefined; name: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; description: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; }) => (
+            {repos.map((repo: { id: Key | null | undefined; html_url: string | undefined; name: string | undefined; description: string | null | undefined}) => (
                 <div key={repo.id} className="container-content">
                     <h3 className="github-title">
                         <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
