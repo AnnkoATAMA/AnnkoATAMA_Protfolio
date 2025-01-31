@@ -1,6 +1,6 @@
 import { Key } from "react";
 import {use} from "../utils/use";
-
+import "./repolist.css";
 type Repo = {
     id: string;
     name: string;
@@ -44,18 +44,26 @@ const RepoList = () => {
     const repos = use<Awaited<ReturnType<typeof getRepos>>>(getRepos());
 
     return (
-        <ul>
-            {repos.map((repo: { id: Key | null | undefined; html_url: string | undefined; name: string | undefined; description: string | null | undefined}) => (
-                <div key={repo.id} className="container-content">
-                    <h3 className="github-title">
-                        <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                            {repo.name}
-                        </a>
-                    </h3>
-                    <p className="github-description">{repo.description}</p>
-                </div>
-            ))}
-        </ul>
+        <div className={"repo-list"}>
+            <ul>
+                {repos.map((repo: {
+                    id: Key | null | undefined;
+                    html_url: string | undefined;
+                    name: string | undefined;
+                    description: string | null | undefined
+                }) => (
+                    <div key={repo.id} className="container-content">
+                        <h3 className="github-title">
+                            <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                                {repo.name}
+                            </a>
+                        </h3>
+                        <p className="github-description">{repo.description}</p>
+                    </div>
+                ))}
+            </ul>
+        </div>
+
     );
 }
 

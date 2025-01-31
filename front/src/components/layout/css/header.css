@@ -1,4 +1,4 @@
-header {
+.header {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -6,7 +6,7 @@ header {
     padding: 16px;
 
 }
-ul {
+.ul {
     display: flex;
     margin-right: 80px;
 }

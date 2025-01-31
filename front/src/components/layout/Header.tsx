@@ -10,9 +10,9 @@ const Header = () => {
 
     return (
         <div>
-            <header>
+            <header className={"header"}>
                 <nav>
-                    <ul>
+                    <ul className={"ul"}>
                         <li>
                             <button className={"gate_button"} onClick={()=>navigate("/contact")}><FaEnvelope size={"36px"}/></button>
                         </li>
