@@ -14,20 +14,23 @@ export const gitUrl = "https://ungh.cc/users/AnnkoATAMA/repos";
 
 function fetchRepos(): Promise<Repo[]> {
     return new Promise((resolve) => {
-        fetch(gitUrl)
+        const delay = new Promise((res) => setTimeout(res, 1500));
+        const fetchPromise = fetch(gitUrl)
             .then((response) => response.json())
             .then((data) => {
                 const repos = data.repos.map((repo: any) => ({
                     id: repo.id.toString(),
                     name: repo.name,
-                    repo: repo.repo,
                     html_url: `https://github.com/${repo.repo}`,
                     description: repo.description || "",
                 }));
-                resolve(repos);
+                return repos;
             });
+
+        Promise.all([fetchPromise, delay]).then(([repos]) => resolve(repos));
     });
 }
+
 
 function getRepos() {
     if (!cache.has(gitUrl)) {

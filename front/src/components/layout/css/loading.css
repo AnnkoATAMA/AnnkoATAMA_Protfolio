@@ -7,4 +7,21 @@
     overflow: hidden;
     z-index: 1;
     background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading-svg {
+    width: 100px;
+    height: 100px;
+    animation: rotateYAnimation 2s linear infinite;
+    transform-style: preserve-3d;
+}
+@keyframes rotateYAnimation {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
 }
