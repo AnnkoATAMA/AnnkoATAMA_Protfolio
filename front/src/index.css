@@ -4,13 +4,31 @@
   border: 0;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
 }
+
+button {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}

@@ -1,11 +1,12 @@
 import RaceList from "../components/RaceList.tsx";
+import "../index.css"
 
-const Home = () => {
+const HomePage = () => {
     return (
-        <div>
+        <div className="container">
             <RaceList />
         </div>
     )
 }
 
-export default Home
+export default HomePage;
