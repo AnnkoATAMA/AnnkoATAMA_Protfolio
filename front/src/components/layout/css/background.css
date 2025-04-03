@@ -13,6 +13,7 @@
 @keyframes fallAndSway {
     0% {
         transform: translate(0, 0) rotate(0deg);
+        opacity: 1;
     }
     50% {
         transform: translate(-50vw, 55vh) rotate(180deg);
@@ -25,5 +26,5 @@
 .sakura-petal {
     position: absolute;
     animation: fallAndSway 12s linear infinite;
-    opacity: 0.8;
+    opacity: 0;
 }

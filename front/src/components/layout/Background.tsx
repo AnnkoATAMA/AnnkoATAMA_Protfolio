@@ -4,8 +4,8 @@ import sakura from "../assets/sakura.png";
 const Background = () => {
     return (
         <div className="background">
-            {Array.from({ length: 50 }).map((_, index) => {
-                const size = Math.random() * 30 + 20;
+            {Array.from({ length: 60 }).map((_, index) => {
+                const size = Math.random() * 50 + 20;
                 return (
                     <img
                         key={index}
@@ -18,7 +18,6 @@ const Background = () => {
                             left: `${Math.random() * 100}%`,
                             animationDelay: `${Math.random() * 10}s`,
                         }}
-                        alt="sakura petal"
                     />
                 );
             })}
