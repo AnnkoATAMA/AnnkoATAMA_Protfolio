@@ -1,0 +1,68 @@
+.repolist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-content {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    border: #bbbbbb 1px solid;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease-in-out;
+    max-width: 350px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container-content:hover {
+    background-color: #ffffffbe;
+    transform: scale(1.05);
+}
+
+.github-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4fa3d1;
+}
+
+.github-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.github-title a:hover {
+    text-decoration: underline;
+}
+
+.github-description {
+    color: #bbb;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .container-content {
+        max-width: 100%;
+    }
+
+    .github-title {
+        font-size: 16px;
+    }
+
+    .github-description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .github-title {
+        font-size: 14px;
+    }
+
+    .github-description {
+        font-size: 12px;
+    }
+}
