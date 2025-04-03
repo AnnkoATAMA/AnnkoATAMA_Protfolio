@@ -1,20 +1,24 @@
 import "./css/background.css";
+import sakura from "../assets/sakura.png";
 
 const Background = () => {
     return (
         <div className="background">
             {Array.from({ length: 50 }).map((_, index) => {
-                const size = Math.random() * 150 + 20;
+                const size = Math.random() * 30 + 20;
                 return (
-                    <div
+                    <img
                         key={index}
-                        className="circle"
+                        src={sakura}
+                        className="sakura-petal"
                         style={{
                             width: `${size}px`,
                             height: `${size}px`,
                             top: `${Math.random() * 100}%`,
-                            left: `${Math.random() * 100}%`
+                            left: `${Math.random() * 100}%`,
+                            animationDelay: `${Math.random() * 10}s`,
                         }}
+                        alt="sakura petal"
                     />
                 );
             })}

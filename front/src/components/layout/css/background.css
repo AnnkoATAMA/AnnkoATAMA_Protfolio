@@ -6,33 +6,24 @@
     height: 100%;
     overflow: hidden;
     z-index: -1;
+    pointer-events: none;
 }
 
-.circle {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    opacity: 0.8;
-    animation: float 10s ease-in-out infinite;
-}
 
-.circle:nth-child(odd) {
-    background-color: rgba(173, 216, 230, 0.7);
-}
-
-.circle:nth-child(even) {
-    background-color: rgba(152, 251, 152, 0.7);
-}
-
-@keyframes float {
+@keyframes fallAndSway {
     0% {
-        transform: translateY(0);
+        transform: translate(0, 0) rotate(0deg);
     }
     50% {
-        transform: translateY(-25px);
+        transform: translate(-50vw, 55vh) rotate(180deg);
     }
     100% {
-        transform: translateY(0);
+        transform: translate(-100vw, 110vh) rotate(360deg);
     }
+}
+
+.sakura-petal {
+    position: absolute;
+    animation: fallAndSway 12s linear infinite;
+    opacity: 0.8;
 }
